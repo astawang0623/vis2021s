@@ -45,6 +45,11 @@
 
   <path d="M256 256 V270 V242 M256 256 H270 H242" stroke="black" fill="white"></path>
   <text x="254" y="250" font-size="16" text-anchor="middle" fill="red">(256, 256)</text>
-</svg>
 
+  <path d="M187 15 C150 70, 178 64, 202 61 S253 50, 194 123" stroke="black" fill="none" stroke-width="7" opacity="0.7"></path>
+  <rect x="3" y="123" width="383" height="258" fill="none" stroke-width="7" stroke="black" opacity="0.7"/>
+  <path d="M5 234 L128 234, M260 234 L383 234" stroke="black" fill="none" stroke-width="7" opacity="0.7"></path>
+  <path d="M170 328 A6 6, 0 1 0 215 328" stroke="black" fill="none" stroke-width="7" opacity="0.7"></path>
+
+</svg>
     
