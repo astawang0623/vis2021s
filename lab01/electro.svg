@@ -50,6 +50,14 @@
   <rect x="3" y="123" width="383" height="258" fill="none" stroke-width="7" stroke="black" opacity="0.7"/>
   <path d="M5 234 L128 234, M260 234 L383 234" stroke="black" fill="none" stroke-width="7" opacity="0.7"></path>
   <path d="M170 328 A6 6, 0 1 0 215 328" stroke="black" fill="none" stroke-width="7" opacity="0.7"></path>
+  <path d="M133 415 A3 10,50 1 0 123 472
+           M146 387 A2 5,10 0 0 163 487
+                    A2 4,0 1 0 128 468" stroke="black" fill="none" stroke-width="7" opacity="0.7"></path>
+  <path d="M261 418 A3 9,130 1 1 264 470
+           M244 387 A2 5,-9 0 1 224 484
+                    A2 4,0 1 1 263 475
+           M163 488 L 226 488" stroke="black" fill="none" stroke-width="7" opacity="0.7"></path>
+  
 
 </svg>
     
