@@ -57,7 +57,12 @@
            M244 387 A2 5,-9 0 1 224 484
                     A2 4,0 1 1 263 475
            M163 488 L 226 488" stroke="black" fill="none" stroke-width="7" opacity="0.7"></path>
-  
+  <path d="M272 425 C330 396, 330 399, 359 416, S395, 444, 445 390" stroke="black" fill="none" stroke-width="7" opacity="0.7"></path>
+  <path d="M436 361 A20 40, 20 0 0, 473 368
+           M435 361 L473 371
+           M450 363 L458 343 M460 367 L468 347" stroke="black" fill="none" stroke-width="7" opacity="0.7"></path>
+  <polyline stroke-linecap="round" stroke-linejoin="round" points="434 310, 429 326, 445 324, 437 340" stroke="black" fill="none" stroke-width="7" opacity="0.7"></polyline>
+    <polyline stroke-linecap="round" stroke-linejoin="round" points="510 330, 489 336, 502 348, 485 352" stroke="black" fill="none" stroke-width="7" opacity="0.7"></polyline>
 
 </svg>
     
