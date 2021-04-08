@@ -125,7 +125,7 @@
 			//設定svg位置
 			d3.treemap()
 				.size([width, height])
-				.paddingTop(45)
+				.paddingTop(25)
 				.paddingRight(15)
 				.paddingInner(10)
 				(d3ds)
@@ -183,7 +183,7 @@
 				.text(({
 					data
 				}) => data.name)
-				.attr('font-size', '1rem')
+				.attr('font-size', '.7rem')
 				.attr('fill', 'skyblue')
 
 			//寫學生分數
@@ -201,7 +201,7 @@
 				.text(({
 					data
 				}) => data.value )
-				.attr('font-size', '.9rem')
+				.attr('font-size', '.6rem')
 				.attr('fill', 'white')
 
 			svg
@@ -218,7 +218,7 @@
 				.text(({
 					data
 				}) => parseFloat(data.seconds)  + '%')
-				.attr('font-size', '.9rem')
+				.attr('font-size', '.6rem')
 				.attr('fill', 'white')
 
 			svg
@@ -237,7 +237,7 @@
 				.text(({
 					data
 				}) => data.name)
-				.attr('font-size', '1.1rem')
+				.attr('font-size', '1rem')
 				.attr('fill', 'black')
 
 			return treemap
@@ -317,6 +317,7 @@
 							d3Json.children.find(e => e.name == bossName).children.push({
 								name: i[0],
 								seconds,
+								type: i[1],
 								value: parseFloat(mapping[seconds])
 							})
 
