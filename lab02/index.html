@@ -95,7 +95,6 @@
 
 	<div id="treemap"></div>
 
-
 	<script>
 		//產生SVG
 		function mkSVG(container, bosses, data) {
@@ -200,7 +199,7 @@
 				}) => y0 + 35)
 				.text(({
 					data
-				}) => data.value )
+				}) => data.value)
 				.attr('font-size', '.6rem')
 				.attr('fill', 'white')
 
@@ -217,7 +216,7 @@
 				}) => y0 + 50)
 				.text(({
 					data
-				}) => parseFloat(data.seconds)  + '%')
+				}) => parseFloat(data.seconds) + '%')
 				.attr('font-size', '.6rem')
 				.attr('fill', 'white')
 
@@ -247,6 +246,7 @@
 	<script>
 		window.addEventListener('load', () => {
 			const treemapContainer = document.getElementById('treemap')
+			console.log('loaded')
 
 			document.getElementById('dropfile').addEventListener('dragover', (evt) => {
 				evt.preventDefault()
@@ -272,11 +272,13 @@
 					fr.onload = () => {
 						const allBoss = []
 						const studentArr = fr.result.split('\n').map(e => e.split(','))
+						console.log(studentArr)
 
 						const d3Json = {
 							children: [],
 							name: 'vis2021s'
 						}
+						console.log(d3Json)
 
 						//先由小到大排列，算出名次、級距、再算出分數
 						const mapping = new Array(41).fill(-1)
@@ -320,21 +322,12 @@
 								type: i[1],
 								value: parseFloat(mapping[seconds])
 							})
-
-
-
 						}
 						treemapContainer.appendChild(mkSVG(treemapContainer, allBoss, d3Json))
-
 					}
-
 					fr.readAsText(csvFile)
 				}
-
 			})
-
-
-
 		})
 	</script>
 </body>
