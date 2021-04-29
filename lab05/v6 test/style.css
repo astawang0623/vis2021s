@@ -1,0 +1,16 @@
+
+  body {
+    border: 1px red solid;
+    padding: 10px;
+  }
+
+  div.bar {
+    border: 1px solid black;
+    /* padding: 10px; */
+    /* margin: 5px; */
+    display: inline-block;
+    width: 20px;
+    height: 75px; /* We'll override height later */
+    background-color: teal;
+  }
+    

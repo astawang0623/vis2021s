@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+
+<head>
+  <meta charset="utf-8">
+  <title>Lab</title>
+  <script src="http://d3js.org/d3.v6.min.js" charset="utf-8"></script> <!-- v6.5.0 -->
+
+  <link rel="stylesheet" href="style.css" type="text/css">
+</head>
+
+<body>
+
+  <script type="text/javascript">
+
+    var temp = []
+    var config = [];
+    var frequency = [];
+    var data = d3.csv("data.csv", function (data) {
+      // console.log(data);
+      temp.push(data)
+      // d3.select("body")
+      //   .selectAll("div")
+      //   .data(parsedCsv)
+      //   .enter()
+      //   .append("div")
+      //   .filter(function (d, i) {
+      //     return (i != 0);
+      //   })
+      //   .attr("class", "bar")
+      //   .style("height", function (d) {
+      //     return d[1] + 'px';
+      //   });
+
+    });
+    console.log(temp);
+
+  </script>
+</body>
+
+</html>
