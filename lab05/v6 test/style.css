@@ -2,6 +2,8 @@
   body {
     border: 1px red solid;
     padding: 10px;
+    font-size: 32pt;
+    font-family: 'Noto Serif TC', serif;
   }
 
   div.bar {
@@ -13,4 +15,7 @@
     height: 75px; /* We'll override height later */
     background-color: teal;
   }
-    
+
+  rect.bar {
+    fill: lightsteelblue;
+  }
