@@ -81,25 +81,28 @@
 
 
 
-    window.addEventListener("load", function () {
-      var svgObject1 = document.getElementById("wang");
-      var svgObject2 = document.getElementById("chin");
-      var svgObject3 = document.getElementById("kuan");
-      // console.log(svgObject.contentDocument);
-      var s1 = svgObject1.contentDocument.getElementsByTagName('svg')[0].getElementsByTagName('path')[0];
-      var s2 = svgObject2.contentDocument.getElementsByTagName('svg')[0].getElementsByTagName('path')[0];
-      var s3 = svgObject3.contentDocument.getElementsByTagName('svg')[0].getElementsByTagName('path')[0];
-      // console.log(s1.getAttribute('d'))
-      var wang = s1.getAttribute('d');
-      var chin = s2.getAttribute('d');
-      var kuan = s3.getAttribute('d')
+    // window.addEventListener("load", function () {
+    //   var svgObject1 = document.getElementById("wang");
+    //   var svgObject2 = document.getElementById("chin");
+    //   var svgObject3 = document.getElementById("kuan");
+    //   // console.log(svgObject.contentDocument);
+    //   var s1 = svgObject1.contentDocument.getElementsByTagName('svg')[0].getElementsByTagName('path')[0];
+    //   var s2 = svgObject2.contentDocument.getElementsByTagName('svg')[0].getElementsByTagName('path')[0];
+    //   var s3 = svgObject3.contentDocument.getElementsByTagName('svg')[0].getElementsByTagName('path')[0];
+    //   // console.log(s1.getAttribute('d'))
+    //   var wang = s1.getAttribute('d');
+    //   var chin = s2.getAttribute('d');
+    //   var kuan = s3.getAttribute('d')
 
-      nameCircleTransition(svg1, wang)
-      nameCircleTransition(svg2, chin)
-      nameCircleTransition(svg3, kuan)
-    });
+    //   nameCircleTransition(svg1, wang)
+    //   nameCircleTransition(svg2, chin)
+    //   nameCircleTransition(svg3, kuan)
+    // });
 
 
+    nameCircleTransition(svg1, wang)
+    nameCircleTransition(svg2, chin)
+    nameCircleTransition(svg3, kuan)
 
     function nameCircleTransition(svg, namePath) {
       svg.append("path")
