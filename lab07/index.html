@@ -53,6 +53,11 @@
   <div id="exhibition-area2">
 
   </div>
+  <script type="text/javascript">
+
+
+  </script>
+
 
   <script type="text/javascript">
     // Your beautiful D3 code will go here
@@ -74,9 +79,7 @@
       .attr("width", 300)
       .attr("height", 350)
 
-    var wang;
-    var chin;
-    var kuan;
+
 
     window.addEventListener("load", function () {
       var svgObject1 = document.getElementById("wang");
@@ -86,29 +89,30 @@
       var s1 = svgObject1.contentDocument.getElementsByTagName('svg')[0].getElementsByTagName('path')[0];
       var s2 = svgObject2.contentDocument.getElementsByTagName('svg')[0].getElementsByTagName('path')[0];
       var s3 = svgObject3.contentDocument.getElementsByTagName('svg')[0].getElementsByTagName('path')[0];
-      // console.log(s.getAttribute('d'))
-      wang = s1.getAttribute('d');
-      chin = s2.getAttribute('d');
-      kuan = s3.getAttribute('d');
+      // console.log(s1.getAttribute('d'))
+      var wang = s1.getAttribute('d');
+      var chin = s2.getAttribute('d');
+      var kuan = s3.getAttribute('d')
+
+      nameCircleTransition(svg1, wang)
+      nameCircleTransition(svg2, chin)
+      nameCircleTransition(svg3, kuan)
     });
 
 
-    nameCircleTransition(svg1, wang)
-    nameCircleTransition(svg2, chin)
-    nameCircleTransition(svg3, kuan)
 
     function nameCircleTransition(svg, namePath) {
       svg.append("path")
         .attr("d", fixedCirclePath)
         .transition()
-        .duration(5000)
-        .delay(500)
+        .duration(3500)
+        .delay(300)
         .on("start", function loop() {
           d3.active(this)
             .attrTween("d", pathTween(namePath, 3))
             .transition()
             .duration(5000)
-            .delay(500)
+            .delay(200)
             .attrTween("d", pathTween(fixedCirclePath, 3))
             .transition()
             .on("start", loop);
