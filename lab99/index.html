@@ -54,9 +54,7 @@
         <div id="left">
             <h1 id="head">威斯康辛胸部硬塊診斷資料集</h1>
             <div id="training-section">
-				<h2>
-					資料集介紹
-                </h2>
+				<h2>資料集介紹 & 訓練資料集的結果</h2>
                 <h4>
                     <a href="https://scikit-learn.org/stable/modules/generated/sklearn.datasets.load_breast_cancer.html#sklearn.datasets.load_breast_cancer">scikit-learn官方文件</a>
                 </h4>
@@ -65,9 +63,10 @@
                 </h4>
             </div>
             <div id="testing-section">
-				<h2>
-					測試資料集的部分
-				</h2>
+				<h2>測試資料集的部分</h2>
+                <p>以下會寫一些神奇的介(唬)紹(爛)但是我還沒寫(或是我忘了寫)</p>
+                <h3>混淆矩陣</h3>
+                <img src="./media/CM.png">
             </div>
         </div>
         
@@ -78,11 +77,12 @@
         <script src="./lib/binarydecisiontree.min.js"></script>
 
         <script>
-            var Lipsum = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.";
+            // var Lipsum = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.";
             var trainingSec = "本次使用的資料集是Python中scikit-learn套件中的breast dataset。資料是由威斯康辛大學附屬醫院(University of Wisconsin Hospitals)中，有關乳房硬塊良性與否的病歷資料。"
             var trainingSec2 = "此Dataset一共有569筆資料，每筆有30個特徵，由細針吸取後數位化細胞核的影像計算而得，包含半徑、周長、面積、紋理等；而標籤是惡性(malignant)和良性(benign)二種。"
             var trainingSec3 = "此資料集為二元分類問題(Binary Classification)。"
 
+            var testingSec = ""
 
             window.onload = function () {
                 function resizeRight(){
@@ -129,8 +129,8 @@
 					.append("img")
 					.attr("src", function(d){ return "media/" + d + ".png"})
                     .style('height', '350px')
-                    .style('width', '350px')
-                ;
+                    .style('width', '350px');
+
 
                 d3.select("#testing-section")
                     .selectAll("img")
@@ -139,8 +139,9 @@
 					.append("img")
 					.attr("src", function(d){ return "media/" + d + ".png"})
                     .style('height', '350px')
-                    .style('width', '350px')
-                ;
+                    .style('width', '350px');
+
+
 				
 				
 

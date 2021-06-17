@@ -12,7 +12,7 @@
                     {
                         "samples": 230,
                         "id": 2,
-                        "key": "radius error",
+                        "key": "area error",
                         "children": [
                             {
                                 "samples": 227,
@@ -27,18 +27,8 @@
                                             {
                                                 "samples": 5,
                                                 "id": 5,
-                                                "key": "fractal dimension error",
+                                                "key": "worst texture",
                                                 "children": [
-                                                    {
-                                                        "samples": 1,
-                                                        "impurity": 0.0,
-                                                        "value": [
-                                                            1.0,
-                                                            0.0
-                                                        ],
-                                                        "id": 6,
-                                                        "criterion": "gini"
-                                                    },
                                                     {
                                                         "samples": 4,
                                                         "impurity": 0.0,
@@ -46,12 +36,22 @@
                                                             0.0,
                                                             4.0
                                                         ],
+                                                        "id": 6,
+                                                        "criterion": "gini"
+                                                    },
+                                                    {
+                                                        "samples": 1,
+                                                        "impurity": 0.0,
+                                                        "value": [
+                                                            1.0,
+                                                            0.0
+                                                        ],
                                                         "id": 7,
                                                         "criterion": "gini"
                                                     }
                                                 ],
                                                 "gini": 0.31999999999999995,
-                                                "value": 0.0013230000040493906
+                                                "value": 26.890000343322754
                                             },
                                             {
                                                 "samples": 221,
@@ -122,7 +122,7 @@
                             {
                                 "samples": 3,
                                 "id": 14,
-                                "key": "fractal dimension error",
+                                "key": "concavity error",
                                 "children": [
                                     {
                                         "samples": 2,
@@ -146,16 +146,16 @@
                                     }
                                 ],
                                 "gini": 0.4444444444444444,
-                                "value": 0.004316499922424555
+                                "value": 0.01996999979019165
                             }
                         ],
                         "gini": 0.042533081285444196,
-                        "value": 0.6255500018596649
+                        "value": 48.70000076293945
                     },
                     {
                         "samples": 15,
                         "id": 17,
-                        "key": "worst texture",
+                        "key": "mean texture",
                         "children": [
                             {
                                 "samples": 5,
@@ -170,18 +170,8 @@
                             {
                                 "samples": 10,
                                 "id": 19,
-                                "key": "worst fractal dimension",
+                                "key": "concave points error",
                                 "children": [
-                                    {
-                                        "samples": 2,
-                                        "impurity": 0.0,
-                                        "value": [
-                                            0.0,
-                                            2.0
-                                        ],
-                                        "id": 20,
-                                        "criterion": "gini"
-                                    },
                                     {
                                         "samples": 8,
                                         "impurity": 0.0,
@@ -189,16 +179,26 @@
                                             8.0,
                                             0.0
                                         ],
+                                        "id": 20,
+                                        "criterion": "gini"
+                                    },
+                                    {
+                                        "samples": 2,
+                                        "impurity": 0.0,
+                                        "value": [
+                                            0.0,
+                                            2.0
+                                        ],
                                         "id": 21,
                                         "criterion": "gini"
                                     }
                                 ],
                                 "gini": 0.31999999999999995,
-                                "value": 0.06492000073194504
+                                "value": 0.010125500150024891
                             }
                         ],
                         "gini": 0.49777777777777776,
-                        "value": 19.90999984741211
+                        "value": 16.19000005722046
                     }
                 ],
                 "gini": 0.10049146189087876,
@@ -212,7 +212,7 @@
                     {
                         "samples": 14,
                         "id": 23,
-                        "key": "worst perimeter",
+                        "key": "worst radius",
                         "children": [
                             {
                                 "samples": 10,
@@ -236,7 +236,7 @@
                             }
                         ],
                         "gini": 0.40816326530612246,
-                        "value": 119.6500015258789
+                        "value": 18.145000457763672
                     },
                     {
                         "samples": 139,
@@ -20523,7 +20523,7 @@
             "split_point": 16.829999923706055
         },
         {
-            "attribute": "radius error",
+            "attribute": "area error",
             "data_rows": {
                 "false": [
                     73,
@@ -20733,8 +20733,8 @@
                 ]
             },
             "has_children": "true",
-            "max_val": 0.6965,
-            "min_val": 0.1166,
+            "max_val": 43.52,
+            "min_val": 8.205,
             "node": 2,
             "split_location": {
                 "left_side": [
@@ -20757,6 +20757,7 @@
                     362,
                     551,
                     158,
+                    424,
                     532,
                     222,
                     55,
@@ -20836,11 +20837,9 @@
                     176,
                     247
                 ],
-                "right_side": [
-                    424
-                ]
+                "right_side": []
             },
-            "split_point": 0.6255500018596649
+            "split_point": 48.70000076293945
         },
         {
             "attribute": "worst smoothness",
@@ -20868,6 +20867,7 @@
                     362,
                     551,
                     158,
+                    424,
                     532,
                     222,
                     55,
@@ -20953,6 +20953,7 @@
                     0.0
                 ],
                 "true": [
+                    1.0,
                     1.0,
                     1.0,
                     1.0,
@@ -21075,6 +21076,7 @@
                     362,
                     551,
                     158,
+                    424,
                     532,
                     222,
                     55,
@@ -21185,6 +21187,7 @@
                     362,
                     551,
                     158,
+                    424,
                     532,
                     222,
                     55,
@@ -21269,6 +21272,7 @@
                     0.0
                 ],
                 "true": [
+                    1.0,
                     1.0,
                     1.0,
                     1.0,
@@ -21394,6 +21398,7 @@
                     362,
                     551,
                     158,
+                    424,
                     532,
                     222,
                     55,
@@ -21474,7 +21479,7 @@
             "split_point": 0.003309000050649047
         },
         {
-            "attribute": "fractal dimension error",
+            "attribute": "worst texture",
             "data_rows": {
                 "false": [],
                 "true": [
@@ -21492,26 +21497,18 @@
                 ]
             },
             "has_children": "true",
-            "max_val": 0.002095,
-            "min_val": 0.001688,
+            "max_val": 25.26,
+            "min_val": 20.83,
             "node": 5,
             "split_location": {
-                "left_side": [],
-                "right_side": [
+                "left_side": [
                     477,
                     298,
                     192
-                ]
+                ],
+                "right_side": []
             },
-            "split_point": 0.0013230000040493906
-        },
-        {
-            "data_rows": {
-                "false": [],
-                "true": []
-            },
-            "has_children": "false",
-            "node": 6
+            "split_point": 26.890000343322754
         },
         {
             "data_rows": {
@@ -21521,6 +21518,14 @@
                     298,
                     192
                 ]
+            },
+            "has_children": "false",
+            "node": 6
+        },
+        {
+            "data_rows": {
+                "false": [],
+                "true": []
             },
             "has_children": "false",
             "node": 7
@@ -21550,6 +21555,7 @@
                     362,
                     551,
                     158,
+                    424,
                     532,
                     222,
                     55,
@@ -21722,6 +21728,7 @@
                     1.0,
                     1.0,
                     1.0,
+                    1.0,
                     1.0
                 ]
             },
@@ -21747,6 +21754,7 @@
                     362,
                     551,
                     158,
+                    424,
                     532,
                     222,
                     55,
@@ -21852,6 +21860,7 @@
                     362,
                     551,
                     158,
+                    424,
                     532,
                     222,
                     55,
@@ -22007,37 +22016,29 @@
             "node": 13
         },
         {
-            "attribute": "fractal dimension error",
+            "attribute": "concavity error",
             "data_rows": {
                 "false": [],
-                "true": [
-                    424
-                ]
+                "true": []
             },
             "data_values": {
                 "false": [],
-                "true": [
-                    1.0
-                ]
+                "true": []
             },
             "has_children": "true",
-            "max_val": 0.004225,
-            "min_val": 0.004225,
+            "max_val": 0,
+            "min_val": 0,
             "node": 14,
             "split_location": {
-                "left_side": [
-                    424
-                ],
+                "left_side": [],
                 "right_side": []
             },
-            "split_point": 0.004316499922424555
+            "split_point": 0.01996999979019165
         },
         {
             "data_rows": {
                 "false": [],
-                "true": [
-                    424
-                ]
+                "true": []
             },
             "has_children": "false",
             "node": 15
@@ -22051,7 +22052,7 @@
             "node": 16
         },
         {
-            "attribute": "worst texture",
+            "attribute": "mean texture",
             "data_rows": {
                 "false": [
                     10,
@@ -22077,8 +22078,8 @@
                 ]
             },
             "has_children": "true",
-            "max_val": 36.91,
-            "min_val": 15.92,
+            "max_val": 29.81,
+            "min_val": 12.91,
             "node": 17,
             "split_location": {
                 "left_side": [
@@ -22092,7 +22093,7 @@
                     414
                 ]
             },
-            "split_point": 19.90999984741211
+            "split_point": 16.19000005722046
         },
         {
             "data_rows": {
@@ -22105,7 +22106,7 @@
             "node": 18
         },
         {
-            "attribute": "worst fractal dimension",
+            "attribute": "concave points error",
             "data_rows": {
                 "false": [
                     10,
@@ -22127,25 +22128,28 @@
                 "true": []
             },
             "has_children": "true",
-            "max_val": 0.09772,
-            "min_val": 0.06165,
+            "max_val": 0.009222,
+            "min_val": 0.006009,
             "node": 19,
             "split_location": {
                 "left_side": [
-                    414
-                ],
-                "right_side": [
                     10,
                     274,
                     184,
-                    54
-                ]
+                    54,
+                    414
+                ],
+                "right_side": []
             },
-            "split_point": 0.06492000073194504
+            "split_point": 0.010125500150024891
         },
         {
             "data_rows": {
                 "false": [
+                    10,
+                    274,
+                    184,
+                    54,
                     414
                 ],
                 "true": []
@@ -22155,12 +22159,7 @@
         },
         {
             "data_rows": {
-                "false": [
-                    10,
-                    274,
-                    184,
-                    54
-                ],
+                "false": [],
                 "true": []
             },
             "has_children": "false",
@@ -22394,7 +22393,7 @@
             "split_point": 20.40499973297119
         },
         {
-            "attribute": "worst perimeter",
+            "attribute": "worst radius",
             "data_rows": {
                 "false": [
                     29,
@@ -22428,8 +22427,8 @@
                 ]
             },
             "has_children": "true",
-            "max_val": 184.6,
-            "min_val": 79.46,
+            "max_val": 25.38,
+            "min_val": 12.4,
             "node": 23,
             "split_location": {
                 "left_side": [
@@ -22438,20 +22437,22 @@
                     528,
                     482,
                     148,
+                    22,
                     89
                 ],
                 "right_side": [
                     29,
                     77,
-                    0,
-                    22
+                    0
                 ]
             },
-            "split_point": 119.6500015258789
+            "split_point": 18.145000457763672
         },
         {
             "data_rows": {
-                "false": [],
+                "false": [
+                    22
+                ],
                 "true": [
                     76,
                     275,
@@ -22469,8 +22470,7 @@
                 "false": [
                     29,
                     77,
-                    0,
-                    22
+                    0
                 ],
                 "true": []
             },
@@ -24782,7 +24782,7 @@
             "split_point": 16.829999923706055
         },
         {
-            "attribute": "radius error",
+            "attribute": "area error",
             "data_rows": {
                 "false": [
                     193,
@@ -25256,8 +25256,8 @@
                 ]
             },
             "has_children": "true",
-            "max_val": 1.214,
-            "min_val": 0.1144,
+            "max_val": 106.0,
+            "min_val": 6.802,
             "node": 2,
             "split_location": {
                 "left_side": [
@@ -25495,7 +25495,7 @@
                     191
                 ]
             },
-            "split_point": 0.6255500018596649
+            "split_point": 48.70000076293945
         },
         {
             "attribute": "worst smoothness",
@@ -26909,7 +26909,7 @@
             "split_point": 0.003309000050649047
         },
         {
-            "attribute": "fractal dimension error",
+            "attribute": "worst texture",
             "data_rows": {
                 "false": [
                     40
@@ -26933,31 +26933,21 @@
                 ]
             },
             "has_children": "true",
-            "max_val": 0.001976,
-            "min_val": 0.001286,
+            "max_val": 30.25,
+            "min_val": 20.37,
             "node": 5,
             "split_location": {
                 "left_side": [
-                    40
-                ],
-                "right_side": [
                     149,
                     403,
                     483,
                     241
+                ],
+                "right_side": [
+                    40
                 ]
             },
-            "split_point": 0.0013230000040493906
-        },
-        {
-            "data_rows": {
-                "false": [
-                    40
-                ],
-                "true": []
-            },
-            "has_children": "false",
-            "node": 6
+            "split_point": 26.890000343322754
         },
         {
             "data_rows": {
@@ -26968,6 +26958,16 @@
                     483,
                     241
                 ]
+            },
+            "has_children": "false",
+            "node": 6
+        },
+        {
+            "data_rows": {
+                "false": [
+                    40
+                ],
+                "true": []
             },
             "has_children": "false",
             "node": 7
@@ -27985,7 +27985,7 @@
             "node": 13
         },
         {
-            "attribute": "fractal dimension error",
+            "attribute": "concavity error",
             "data_rows": {
                 "false": [
                     297,
@@ -28005,8 +28005,8 @@
                 ]
             },
             "has_children": "true",
-            "max_val": 0.005875,
-            "min_val": 0.001754,
+            "max_val": 0.02176,
+            "min_val": 0.01272,
             "node": 14,
             "split_location": {
                 "left_side": [
@@ -28017,7 +28017,7 @@
                     191
                 ]
             },
-            "split_point": 0.004316499922424555
+            "split_point": 0.01996999979019165
         },
         {
             "data_rows": {
@@ -28041,7 +28041,7 @@
             "node": 16
         },
         {
-            "attribute": "worst texture",
+            "attribute": "mean texture",
             "data_rows": {
                 "false": [
                     261,
@@ -28085,8 +28085,8 @@
                 ]
             },
             "has_children": "true",
-            "max_val": 35.64,
-            "min_val": 17.76,
+            "max_val": 24.98,
+            "min_val": 13.23,
             "node": 17,
             "split_location": {
                 "left_side": [
@@ -28109,7 +28109,7 @@
                     205
                 ]
             },
-            "split_point": 19.90999984741211
+            "split_point": 16.19000005722046
         },
         {
             "data_rows": {
@@ -28126,7 +28126,7 @@
             "node": 18
         },
         {
-            "attribute": "worst fractal dimension",
+            "attribute": "concave points error",
             "data_rows": {
                 "false": [
                     261,
@@ -28160,15 +28160,11 @@
                 ]
             },
             "has_children": "true",
-            "max_val": 0.0974,
-            "min_val": 0.05972,
+            "max_val": 0.0111,
+            "min_val": 0.005174,
             "node": 19,
             "split_location": {
                 "left_side": [
-                    157,
-                    363
-                ],
-                "right_side": [
                     261,
                     126,
                     263,
@@ -28177,20 +28173,13 @@
                     100,
                     171,
                     205
-                ]
-            },
-            "split_point": 0.06492000073194504
-        },
-        {
-            "data_rows": {
-                "false": [],
-                "true": [
+                ],
+                "right_side": [
                     157,
                     363
                 ]
             },
-            "has_children": "false",
-            "node": 20
+            "split_point": 0.010125500150024891
         },
         {
             "data_rows": {
@@ -28205,6 +28194,17 @@
                     205
                 ],
                 "true": []
+            },
+            "has_children": "false",
+            "node": 20
+        },
+        {
+            "data_rows": {
+                "false": [],
+                "true": [
+                    157,
+                    363
+                ]
             },
             "has_children": "false",
             "node": 21
@@ -28695,7 +28695,7 @@
             "split_point": 20.40499973297119
         },
         {
-            "attribute": "worst perimeter",
+            "attribute": "worst radius",
             "data_rows": {
                 "false": [
                     172,
@@ -28737,8 +28737,8 @@
                 ]
             },
             "has_children": "true",
-            "max_val": 188.5,
-            "min_val": 69.05,
+            "max_val": 28.11,
+            "min_val": 10.28,
             "node": 23,
             "split_location": {
                 "left_side": [
@@ -28760,7 +28760,7 @@
                     161
                 ]
             },
-            "split_point": 119.6500015258789
+            "split_point": 18.145000457763672
         },
         {
             "data_rows": {
