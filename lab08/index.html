@@ -19,13 +19,24 @@
         div {
           font-size: 12pt;
         }
-        
+
         body {
             background-color: rgba(255, 128, 255, 0.1);
         }
 
         video:hover {
             box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+        }
+
+        .path {
+          stroke-dasharray: 1000;
+          stroke-dashoffset: 1000;
+          animation: dash 3s linear forwards;
+        }
+        @keyframes dash {
+          to {
+            stroke-dashoffset: 0;
+          }
         }
     </style>
     <script src="https://d3js.org/d3.v6.min.js" charset="utf-8"></script> <!-- v6.5.0 -->
